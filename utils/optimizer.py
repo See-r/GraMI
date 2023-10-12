@@ -269,7 +269,7 @@ def loss_distribution(mu, logvar, emb, eps):
     mu_mix = mu_mix.view(1, K, N, zdim)
     std_mix = std_mix.view(1, K, N, zdim)
 
-    # compute -log std[k] - (Z[j] - mu[k])^2 / 2*std[k]^2 for all (j,k)对所有的J，计算K次
+    # compute -log std[k] - (Z[j] - mu[k])^2 / 2*std[k]^2 for all (j,k)
     # the shape of result tensor log_post_ker_JK is [J,K]
     log_post_ker_JK = - torch.sum(
         0.5 * ((Z - mu_mix) / (std_mix + SMALL)).pow(2), dim=[-2, -1]
