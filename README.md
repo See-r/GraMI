@@ -6,6 +6,8 @@ This is the official repository of paper **Variational Graph Autoencoders for He
 Our datasets are downloaded from baselines' publicly available datasets.
 
 .<div align=center><img src="https://github.com/See-r/GraMI/blob/main/image/datasets.png" width="500" height="350" /></div>
+
+
 https://github.com/cynricfu/MAGNN.
 
 https://github.com/liangchundong/HGCA.
